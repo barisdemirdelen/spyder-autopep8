@@ -291,7 +291,7 @@ class AutoPEP8(SpyderPluginMixin):  # pylint: disable=R0904
             self.main, _("Run autopep8 code autoformatting"),
             icon=self.get_plugin_icon(),
             triggered=self.run_autopep8)
-        fixed_shortcut("Shift+F8", self.main,
+        fixed_shortcut("Ctrl+Alt+L", self.main,
                        self.run_autopep8)
         self.main.source_menu_actions += [None, autopep8_act]
         self.main.editor.pythonfile_dependent_actions += [autopep8_act]
